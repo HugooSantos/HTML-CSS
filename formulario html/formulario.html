@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="formulario.css" rel="stylesheet" type="text/css" media="screen">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="">
+        <h1 id="titulo">Cadastro</h1>
+        <p id="subtitulo">complete suas informações</p>
+        <br>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"> <strong> Nome </strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong> Sobrenome </strong> </label>
+                <input type="text" name="Sobrenome" id="Sobrenome" required>
+            </div>
+        </fieldset class="grupo">
+        <div class="campo">
+            <label for="email"><strong> E-mail </strong></label>
+            <input type="email" name="email" id="email" required> 
+        </div>
+        <div class="campo">
+            <label> <strong> Qual seu sexo? </strong></label> <br>
+            <label>
+                <input type="radio" name="genero" value="Masculino" checked>Masculino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="Feminino">Feminino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="Indefinido">Indefinido
+            </label>
+        </div>
+        <div class="campo">
+            <label for="formacao"><strong> sua formação? </strong></label>
+            <select id="formacao">
+                <option selected disabled value="">Selecione</option>
+                <option>Ensino fundamental</option>
+                <option>Ensino médio</option>
+                <option>Ensino superior</option>
+            </select>
+        </div>
+
+        <fieldset>
+            <div id="check">
+                <label> <strong> Selecione a área de interesse: </strong></label><br>
+                <input type="checkbox" id="adm" name="administracao" value="administracao">
+                <label for="adm">Administração</label>
+                <input type="checkbox" id="enge" name="engenheiro" value="engenheiro">
+                <label for="enge">Engenharia Civil</label>
+                <input type="checkbox" id="engeele" name="engenheiro eletrico" value="engenheiro eletrico">
+                <label for="engeele">Engenharia Elétrica</label>
+                <input type="checkbox" id="quim" name="quimica" value="quimica">
+                <label for="quim">Química</label>
+                <input type="checkbox" id="ef" name="educacao fisica" value="educacao fisica">
+                <label for="ef">Educação Física</label>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <br>
+            <label> <strong> Quais são seus objetivos? </strong></label>
+            <textarea name="objetivos" id="obj" style="width : 30em" rows="5"></textarea><br>
+            <button type="submit" class="botao">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
